@@ -10,4 +10,4 @@ $week = (int) $perbedaan / 7 ;
 $fix = $perbedaan - (7 * (int) $week) ;
 echo (int) $week . " minggu " . $fix . " hari";
 
- ?>
+?>

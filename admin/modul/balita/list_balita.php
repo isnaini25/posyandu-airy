@@ -52,7 +52,8 @@
                                                 <div class="btn-group">
                                                     <a href="<?php echo $admin_url ;?>adminweb.php?modul=edit_balita&id_balita=<?php echo $bal['kode_balita'];?>" class="btn btn-warning"><i class="fa fa-pencil"></i></button></a>
                                                     <a href="<?php echo $admin_url ;?>modul/balita/aksi_hapus.php?kode_balita=<?php  echo $bal['kode_balita'];?>" onClick ="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger"><i class="fa fa-power-off"></i></button></a>
-                                                    <a href="<?php echo$admin_url ;?>adminweb.php?modul=penimbangan&id_balita=<?php echo $bal['kode_balita'];?>" class="btn btn-warning"><i>PENIMBANGAN</i></button></a>
+                                                    <a href="<?php echo$admin_url ;?>adminweb.php?modul=penimbangan&id_balita=<?php echo $bal['kode_balita'];?>" class="btn btn-info"><i>PENIMBANGAN</i></button></a>
+                                                    <a href="<?php echo$admin_url ;?>adminweb.php?modul=imunisasi&id_balita=<?php echo $bal['kode_balita'];?>" class="btn btn-success"><i>IMUNISASI</i></button></a>
                                                 </div>
                                             </td>
 

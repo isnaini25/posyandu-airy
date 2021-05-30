@@ -72,7 +72,7 @@ session_start();
         ***********************************-->
         <div class="header">    
             <div class="header-content clearfix">
-                
+                <!-- 
                 <div class="nav-control">
                     <div class="hamburger">
                         <span class="toggle-icon"><i class="icon-menu"></i></span>
@@ -90,7 +90,7 @@ session_start();
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="header-right">
                     <ul class="clearfix">
                         <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
@@ -218,7 +218,7 @@ session_start();
                                 </div>
                             </div>
                         </li>
-                        <li class="icons dropdown">
+                        <!-- <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <img src="asset/images/user/1.png" height="40" width="40" alt="">
@@ -243,7 +243,7 @@ session_start();
                                     </ul>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -287,10 +287,13 @@ session_start();
                             elseif ($_GET['modul'] == 'imunisasi'){
                                       include "modul/imunisasi/list_imunisasi.php";
                                     }elseif ($_GET['modul'] == 'tambah_imunisasi'){
-                                      include "modul/imunisasi/tambah.php";
+                                      include "modul/imunisasi/tambah_imunisasi.php";
                                     }elseif ($_GET['modul'] == 'edit_imunisasi'){
                                       include "modul/imunisasi/form_edit.php";
                                     } //.imunisasi
+                            elseif ($_GET['modul'] == 'cetak'){
+                                      include "modul/cetak/cetak.php";
+                                    } //.cetak
 						    else{
 						              include "modul/home.php";
 						            }
@@ -302,11 +305,11 @@ session_start();
         <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label">Dashboard</li>
+                    <li class="nav-label">POSYANDU</li>
                     <li>
                         
                             <a href="adminweb.php?modul=home">
-                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Home</span>
                         </a>
                     </li>
                       <li>
@@ -316,36 +319,19 @@ session_start();
                       </li>
                        <li>
                         <a href="adminweb.php?modul=ibu">
-                            <i class="icon-globe-alt menu-icon"></i><span>Data Ibu balita</span>
+                            <i class="icon-user menu-icon"></i><span>Data Ibu balita</span>
                         </a>
                       </li>
                        <li>
                         <a href="adminweb.php?modul=balita">
-                            <i class="icon-globe-alt menu-icon"></i><span>Data Balita</span>
+                            <i class="icon-screen-tablet menu-icon"></i><span>Data Balita</span>
                         </a>
                       </li>
-                    <li>
-                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Pelayanan</span>
+                      <li>
+                        <a href="adminweb.php?modul=cetak">
+                            <i class="fa fa-print menu-icon"></i><span>CETAK</span>
                         </a>
-                        <ul aria-expanded="false">
-                            <li><a href="adminweb.php?modul=penimbangan">Penimbangan</a></li>
-                            <li><a href="adminweb.php?modul=imunisasi">Imunisasi</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-graph menu-icon"></i> <span class="nav-text">Laporan Posyandu</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">Flot</a></li>
-                            <li><a href="./chart-morris.html">Morris</a></li>
-                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="./chart-chartist.html">Chartist</a></li>
-                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="./chart-peity.html">Peity</a></li>
-                        </ul>
-                    </li>
+                      </li>
                 </ul>
             </div>
         </div>
