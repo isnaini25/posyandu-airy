@@ -20,8 +20,8 @@ if (!ctype_alnum($username) OR !ctype_alnum($pass)) {
 	if ($ketemu > 0) {
 		session_start();
 
-		$_SESSION[namauser] = $r[username];
-		$_SESSION[password] = $r[password];
+		$_SESSION['namauser'] = $r['username'];
+		$_SESSION'password'] = $r['password'];
 
 		header('location:adminweb.php?modul=home.php');
 	}else{
