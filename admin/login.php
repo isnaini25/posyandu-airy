@@ -23,7 +23,7 @@ if (!ctype_alnum($username) OR !ctype_alnum($pass)) {
 		$_SESSION['namauser'] = $r['username'];
 		$_SESSION'password'] = $r['password'];
 
-		header('location:adminweb.php?modul=home.php');
+		header('location:adminweb.php');
 	}else{
 		echo "<center>Login Gagal !!! <br>
 		Username atau Password Anda tidak benar.<br>
